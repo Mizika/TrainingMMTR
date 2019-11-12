@@ -1,21 +1,22 @@
 package first.task;
 
-import java.io.*;
-import java.util.HashMap;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.io.BufferedWriter;
 import java.util.Map;
+import java.util.HashMap;
 import java.util.Scanner;
 
+import static first.task.ReadAllFromFile.filePath;
+
 public class DeleteByKey {
-    private static String filePath = "C:\\Training\\dictionaries\\";
     private static BufferedReader readFromConsole = new BufferedReader(new InputStreamReader(System.in));
 
-
     public static void removeFromFileByKey(String fileName) throws IOException {
-
-        File file=new File(filePath + fileName);
-
-        FileWriter fstream = new FileWriter(file);
-        BufferedWriter out = new BufferedWriter(fstream);
+        File file = new File(filePath + fileName);
 
         Map<String, String> hashMap = new HashMap<>();
         hashMap.clear();
@@ -34,10 +35,12 @@ public class DeleteByKey {
 
             for (String key : hashMap.keySet()) {
                 if (key.equals(line)){
-                    System.out.println(hashMap.remove(line));
+                    hashMap.remove(line);
                     System.out.println("Значение было удаленно!");
+                    FileWriter fstream = new FileWriter(file);
+                    BufferedWriter out = new BufferedWriter(fstream);
                     for (Map.Entry entry : hashMap.entrySet()){
-                        out.write(entry.getKey() + " "+ entry.getValue() + "\n");
+                        out.write(entry.getKey() + " " + entry.getValue() + "\n");
                     }
                     out.close();
                     break;
@@ -49,7 +52,7 @@ public class DeleteByKey {
             }
             sc.close();
         }catch (Exception err){
-            System.out.println(err.getMessage());
+            err.printStackTrace();
         }
     }
 }

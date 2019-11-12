@@ -1,12 +1,12 @@
 package first.task;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
+
+import static first.task.ReadAllFromFile.filePath;
 
 public class SearchDictionary {
-    private static String filePath = "C:\\Training\\dictionaries\\";
-
     public static void searchFiles(){
         System.out.println("Найденные словари:");
         List<String> listDic = new ArrayList<>();
@@ -14,9 +14,11 @@ public class SearchDictionary {
         int i = 1;
         if(dic.isDirectory()){
             for(File item : dic.listFiles()){
-                String result = i++ +". " +item.getName();
+                String result = i++ + ". " + item.getName();
                 listDic.add(result);
             }
+        }else {
+            System.out.println("Не найдена папка со словарями!");
         }
         System.out.println(listDic);
     }
