@@ -12,7 +12,7 @@ public class Menu implements IMenu {
     private static Scanner numberOfDic = new Scanner(System.in);
 
 
-    public void outFromConsol() {
+    public void outFromConsole() {
         searchFiles();
 
         int numAction = numberOfDic.nextInt();

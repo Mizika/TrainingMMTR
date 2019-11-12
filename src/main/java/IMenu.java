@@ -1,4 +1,3 @@
 public interface IMenu {
-    void outFromConsol();
-
+    void outFromConsole();
 }
