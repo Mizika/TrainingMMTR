@@ -18,8 +18,9 @@ public class test2 {
         Map<String, String> hashMap = new HashMap<>();
         File file=new File(filePath + fileName);
         try (BufferedReader readfromFile = new BufferedReader(new FileReader(file))){
-            while (readfromFile.readLine()!= null){
-                String[] tmp = readfromFile.readLine().split(" ");
+            String line;
+            while ((line = readfromFile.readLine())!= null){
+                String[] tmp = line.split(" ");
                 hashMap.put(tmp[0], tmp[1]);
             }
 
