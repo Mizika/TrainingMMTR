@@ -3,9 +3,10 @@ package first.task;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Action implements IAction {
-    BufferedReader readFromConsole = new BufferedReader(new InputStreamReader(System.in));
+    Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
 
     private static String actionWithDic = "\nВозможные действия:\n"+
             "1. Чтение списка пар из файла.\n"+
@@ -23,7 +24,7 @@ public class Action implements IAction {
 
         for (; ;)
         {
-            int ActionNumber = Integer.parseInt(readFromConsole.readLine());
+            int ActionNumber = Integer.parseInt(scanner.nextLine());
 
             if (ActionNumber == 1) { System.out.println(ReadAllFromFile.readAllFromFile(DictionarySelection.NameDic));}
 

@@ -1,26 +1,26 @@
 package first.task;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class ReadAllFromFile {
-    private static String filePath = "C:\\Training\\dictionaries\\";
+    private static String lineSeparator = System.lineSeparator();
+    //public static String filePath = "C:" + lineSeparator + "Training" + lineSeparator + "dictionaries" + lineSeparator;
+    public static String filePath = "D:\\TrainingMMTR\\dictionaries\\";
 
     public static List<String> readAllFromFile(String fileName) {
-        File file=new File(filePath + fileName);
+        File file = new File(filePath + fileName);
         List<String> listResult = new ArrayList<>();
         try{
             Scanner sc = new Scanner(file);
             while(sc.hasNextLine()) {
-                String result = sc.nextLine();
-                listResult.add(result);
+                listResult.add(sc.nextLine());
             }
-            return listResult;
         }catch (Exception err){
-            return Collections.singletonList(err.getMessage());
+            err.printStackTrace();
         }
+        return listResult;
     }
 }
