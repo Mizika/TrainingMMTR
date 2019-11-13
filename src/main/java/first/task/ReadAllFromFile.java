@@ -6,9 +6,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class ReadAllFromFile {
-    private static String lineSeparator = System.lineSeparator();
-    //public static String filePath = "C:" + lineSeparator + "Training" + lineSeparator + "dictionaries" + lineSeparator;
-    public static String filePath = "D:\\TrainingMMTR\\dictionaries\\";
+    public static String filePath = "C:\\Training\\dictionaries\\";
 
     public static List<String> readAllFromFile(String fileName) {
         File file = new File(filePath + fileName);
