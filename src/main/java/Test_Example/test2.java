@@ -1,4 +1,4 @@
-package first.task;
+package Test_Example;
 
 import java.io.*;
 import java.util.HashMap;
