@@ -17,7 +17,7 @@ public class test {
         //буквы в value
         Pattern bukvi = Pattern.compile("\\D{5}");
 
-        Matcher matcher = sybol.matcher(value);
+        Matcher matcher = bukvi.matcher(value);
 
         if (matcher.matches()) {
             System.out.println("Выражение подходит!");
