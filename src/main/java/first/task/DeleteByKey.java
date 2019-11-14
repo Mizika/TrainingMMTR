@@ -23,8 +23,7 @@ public class DeleteByKey {
         }
         System.out.println("Введите ключ для удаления: ");
         String line = readFromConsole.readLine();
-        for (String key : hashMap.keySet()) {
-            if (key.equals(line)) {
+        if (hashMap.get(line) != null) {
                 FileWriter fstream = new FileWriter(file);
                 BufferedWriter out = new BufferedWriter(fstream);
                 System.out.println("Значение \"" + hashMap.remove(line) + "\" было удалено!");
@@ -32,11 +31,8 @@ public class DeleteByKey {
                     out.write(entry.getKey() + " " + entry.getValue() + "\n");
                 }
                 out.close();
-                break;
             }else {
                 System.out.println("Значение по данному ключу не найдено!");
-                break;
             }
         }
     }
-}

@@ -1,4 +1,4 @@
-package Test_Example;
+package first.task;
 
 import java.io.*;
 import java.util.HashMap;
@@ -6,12 +6,7 @@ import java.util.Map;
 
 import static first.task.ReadAllFromFile.filePath;
 
-
-public class test2 {
-
-    public static void main(String[] args) throws IOException {
-        removeFromFileByKey("first.txt");
-    }
+public class AddValuesToFile {
 
     private static BufferedReader readFromConsole = new BufferedReader(new InputStreamReader(System.in));
 

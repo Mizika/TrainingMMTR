@@ -1,30 +1,28 @@
 package Test_Example;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.io.InputStreamReader;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class test {
     public static void main(String[] args) throws IOException {
-        Map<String, String> hashMap = new HashMap<>();
-        hashMap.put("11", "Value1");
-        hashMap.put("22", "Value2");
-        hashMap.put("33", "Value3");
-        hashMap.put("44", "Value4");
-        hashMap.put("55", "Value5");
+        BufferedReader readFromConsole = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите значения для добавления:");
+        String value = readFromConsole.readLine();
+        //цифры в value
+        Pattern sybol = Pattern.compile("\\d{5}");
+        //буквы в value
+        Pattern bukvi = Pattern.compile("\\D{5}");
 
-        FileWriter fstream;
-        BufferedWriter out;
+        Matcher matcher = sybol.matcher(value);
 
-        fstream = new FileWriter("C:\\Training\\dictionaries\\values1.txt");
-        out = new BufferedWriter(fstream);
-
-       for (Map.Entry entry : hashMap.entrySet()){
-           out.write(entry.getKey() + " "+ entry.getValue() + "\n");
-       }
-        out.close();
+        if (matcher.matches()) {
+            System.out.println("Выражение подходит!");
+        }else {
+            System.out.println("Введенно некоректное значение!");
         }
     }
+}

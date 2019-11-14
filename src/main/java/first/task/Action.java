@@ -32,6 +32,8 @@ public class Action implements IAction {
 
             else if (ActionNumber == 3){ SearchByKey.readFromFileByKey(DictionarySelection.NameDic);}
 
+            else if (ActionNumber == 4) {AddValuesToFile.removeFromFileByKey(DictionarySelection.NameDic);}
+
             else if (ActionNumber == 5){break;}
 
             else if (ActionNumber == 6) { System.out.println(actionWithDic);}
