@@ -7,10 +7,15 @@ import java.util.Scanner;
 public class DictionarySelection {
     private static Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
     public static String NameDic;
+    private static int lineNumber;
 
     public static void chooseDic() {
         System.out.println("Выберите словарь:");
-        int lineNumber = scanner.nextInt();
+        try {
+            lineNumber = scanner.nextInt();
+        }catch (Exception err){
+            System.out.println("Введён некорректный символ!");
+        }
         switch(lineNumber){
             case 1:
                 System.out.println("Вы находитесь в первом словаре!");
@@ -21,7 +26,6 @@ public class DictionarySelection {
                 NameDic = "second.txt";
                 break;
             default:
-                System.out.println("Cловарь не найден!");
                 System.exit(0);
         }
     }

@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Action implements IAction {
     Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    private int ActionNumber;
 
     private static String actionWithDic = "\nВозможные действия:\n"+
             "1. Чтение списка пар из файла.\n"+
@@ -24,7 +25,10 @@ public class Action implements IAction {
 
         for (; ;)
         {
-            int ActionNumber = Integer.parseInt(scanner.nextLine());
+            try {
+                ActionNumber = Integer.parseInt(scanner.nextLine());
+            }catch (Exception err){
+                System.out.println("Введён некорректный символ!"); }
 
             if (ActionNumber == 1) { System.out.println(ReadAllFromFile.readAllFromFile(DictionarySelection.NameDic));}
 
