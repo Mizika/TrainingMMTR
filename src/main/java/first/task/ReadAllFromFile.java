@@ -6,10 +6,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class ReadAllFromFile {
-    public static String filePath = "C:\\Training\\dictionaries\\";
 
     public static List<String> readAllFromFile(String fileName) {
-        File file = new File(filePath + fileName);
+        File file = new File(Const.PATH + fileName);
         List<String> listResult = new ArrayList<>();
         try{
             Scanner sc = new Scanner(file);

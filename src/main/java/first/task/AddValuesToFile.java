@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static first.task.ReadAllFromFile.filePath;
 
 public class AddValuesToFile {
 
@@ -16,7 +15,7 @@ public class AddValuesToFile {
     private static String value;
 
     public static void removeFromFileByKey(String fileName) throws IOException {
-        DictionaryReader read = new DictionaryReader(filePath, fileName);
+        DictionaryReader read = new DictionaryReader(Const.PATH, fileName);
         Map<String, String> data = read.readerFromFile();
 
 
@@ -35,7 +34,7 @@ public class AddValuesToFile {
                 fileReg = letters.matcher(value);
             }
             if (fileReg.matches()) {
-                FileWriter fstream = new FileWriter(filePath +fileName);
+                FileWriter fstream = new FileWriter(Const.PATH +fileName);
                 BufferedWriter out = new BufferedWriter(fstream);
                 data.put(key, value);
                 System.out.println("Значение \"" + key + " " + value + "\" было добавленно!");
