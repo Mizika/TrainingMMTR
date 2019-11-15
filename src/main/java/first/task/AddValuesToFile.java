@@ -1,7 +1,6 @@
 package first.task;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,20 +16,13 @@ public class AddValuesToFile {
     private static String value;
 
     public static void removeFromFileByKey(String fileName) throws IOException {
-        Map<String, String> hashMap = new HashMap<>();
-        File file = new File(filePath + fileName);
-        try (BufferedReader readfromFile = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = readfromFile.readLine()) != null) {
-                String[] tmp = line.split(" ");
-                hashMap.put(tmp[0], tmp[1]);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        DictionaryReader read = new DictionaryReader(filePath, fileName);
+        Map<String, String> data = read.readerFromFile();
+
+
         System.out.println("Введите ключ для добавления:");
         String key = readFromConsole.readLine();
-        if (hashMap.get(key) == null) {
+        if (data.get(key) == null) {
             System.out.println("Введите значения для добавления:");
             if (fileName.equals("second.txt")) {
                 System.out.println("Значение может состоять только из 5 цифр!");
@@ -43,11 +35,11 @@ public class AddValuesToFile {
                 fileReg = letters.matcher(value);
             }
             if (fileReg.matches()) {
-                FileWriter fstream = new FileWriter(file);
+                FileWriter fstream = new FileWriter(filePath +fileName);
                 BufferedWriter out = new BufferedWriter(fstream);
-                hashMap.put(key, value);
+                data.put(key, value);
                 System.out.println("Значение \"" + key + " " + value + "\" было добавленно!");
-                for (Map.Entry entry : hashMap.entrySet()) {
+                for (Map.Entry entry : data.entrySet()) {
                     out.write(entry.getKey() + " " + entry.getValue() + "\n");
                 }
                 out.close();

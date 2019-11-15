@@ -1,11 +1,13 @@
-package Test_Example;
+package first.task;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class test2 {
+public class DictionaryReader {
 
     private  Map<String, String> hashMap;
     private  String filePath;
@@ -27,7 +29,7 @@ public class test2 {
         return null;
     }
 
-    public test2(String filePath, String fileName) {
+    public DictionaryReader(String filePath, String fileName) {
         this.filePath = filePath;
         this.fileName = fileName;
     }
