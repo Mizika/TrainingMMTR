@@ -13,16 +13,16 @@ public class test {
         System.out.println("Введите значения для добавления:");
         String value = readFromConsole.readLine();
         //цифры в value
-        Pattern sybol = Pattern.compile("\\d{5}");
+        Pattern sybol = Pattern.compile("\\d{5}|[а-яА-ЯёЁ]");
         //буквы в value
-        Pattern bukvi = Pattern.compile("\\D{5}");
+        Pattern bukvi = Pattern.compile("\\D{4}|[а-яА-ЯёЁ]");
 
         Matcher matcher = bukvi.matcher(value);
 
         if (matcher.matches()) {
             System.out.println("Выражение подходит!");
         }else {
-            System.out.println("Введенно некоректное значение!");
+            System.out.println("Введено не корректное значение!");
         }
     }
 }

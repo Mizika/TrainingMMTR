@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e2da83cc-17ef-424b-9ceb-9309ff24c7aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionaries/first.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionaries/first.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionaries/second.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionaries/second.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Test_Example/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test_Example/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test_Example/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test_Example/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,8 +61,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+            <state relative-caret-position="523">
+              <caret line="54" column="1" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="54" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="66" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="24" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,34 +83,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="225">
+              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_121/src.zip!/java/io/BufferedReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -174,11 +169,11 @@
         <option value="$PROJECT_DIR$/src/main/java/first/task/DictionarySelection.java" />
         <option value="$PROJECT_DIR$/src/main/java/first/task/TEst.java" />
         <option value="$PROJECT_DIR$/src/test/java/first/task/SearchByKeyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test_Example/test2.java" />
         <option value="$PROJECT_DIR$/src/main/java/first/task/DeleteByKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/first/task/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test_Example/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test_Example/test2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java" />
       </list>
     </option>
   </component>
@@ -245,7 +240,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573744052733" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573801757722" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Training" />
@@ -274,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.WorkWithDictionary">
     <configuration name="WorkWithDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="first.task.WorkWithDictionary" />
       <module name="Training" />
@@ -333,9 +328,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.WorkWithDictionary" />
         <item itemvalue="Application.test2 (1)" />
+        <item itemvalue="Application.test" />
         <item itemvalue="JUnit.SearchByKeyTest.test" />
         <item itemvalue="Application.test2" />
       </list>
@@ -387,11 +382,19 @@
       <option name="project" value="LOCAL" />
       <updated>1573743499337</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor some code">
+      <created>1573744072477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573744072477</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19635417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -402,7 +405,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2825397" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28783068" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3026455" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -574,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/first/task/WorkWithDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/first/task/SearchByKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -611,20 +607,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        <state relative-caret-position="408">
+          <caret line="24" column="66" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="24" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        <state relative-caret-position="523">
+          <caret line="54" column="1" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="54" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -638,10 +634,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test_Example/test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/first/task/WorkWithDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/first/task/AddValuesToFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
