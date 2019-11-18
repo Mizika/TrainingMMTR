@@ -30,17 +30,19 @@ public class Action implements IAction {
             }catch (Exception err){
                 System.out.println("Введён некорректный символ!"); }
 
-            if (ActionNumber == 1) { System.out.println(ReadAllFromFile.readAllFromFile(DictionarySelection.NameDic));}
+            if (ActionNumber == 1) { System.out.println(ReadAllFromFile.readAllFromFile(DictionarySelection.NameDic)); System.out.println(actionWithDic);}
 
-            else if (ActionNumber == 2 ) {DeleteByKey.removeFromFileByKey(DictionarySelection.NameDic);}
+            else if (ActionNumber == 2 ) {DeleteByKey.removeFromFileByKey(DictionarySelection.NameDic); System.out.println(actionWithDic);}
 
-            else if (ActionNumber == 3) {SearchByKey.readFromFileByKey(DictionarySelection.NameDic);}
+            else if (ActionNumber == 3) {SearchByKey.readFromFileByKey(DictionarySelection.NameDic); System.out.println(actionWithDic);}
 
-            else if (ActionNumber == 4) {AddValuesToFile.removeFromFileByKey(DictionarySelection.NameDic);}
+            else if (ActionNumber == 4) {AddValuesToFile.removeFromFileByKey(DictionarySelection.NameDic); System.out.println(actionWithDic);}
 
             else if (ActionNumber == 5) {break;}
 
             else if (ActionNumber == 6) {System.out.println(actionWithDic);}
+
+            else if (ActionNumber == 7) {SearchDictionary.searchFiles(); DictionarySelection.chooseDic();}
 
             else {System.out.println("Действие не найденно!"); }
 
