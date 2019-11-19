@@ -42,7 +42,7 @@ public class Action implements IAction {
 
             else if (ActionNumber == 6) {System.out.println(actionWithDic);}
 
-            else if (ActionNumber == 7) {SearchDictionary.searchFiles(); DictionarySelection.chooseDic();}
+            else if (ActionNumber == 7) {SearchDictionary.searchFiles(); DictionarySelection.chooseDic(); System.out.println(actionWithDic);}
 
             else {System.out.println("Действие не найденно!"); }
 
