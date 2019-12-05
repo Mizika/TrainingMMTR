@@ -1,5 +1,7 @@
 package Test_Example;
 
+import first.task.Action;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +10,9 @@ import java.util.regex.Pattern;
 
 
 public class test {
+
     public static void main(String[] args) throws IOException {
+        @Test(value1 = "FFFFFFFFF")
         BufferedReader readFromConsole = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите значения для добавления:");
         String value = readFromConsole.readLine();
@@ -16,7 +20,6 @@ public class test {
         Pattern sybol = Pattern.compile("\\d{5}|[а-яА-ЯёЁ]");
         //буквы в value
         Pattern bukvi = Pattern.compile("\\D{4}|[а-яА-ЯёЁ]");
-
         Matcher matcher = bukvi.matcher(value);
 
         if (matcher.matches()) {
@@ -25,4 +28,12 @@ public class test {
             System.out.println("Введено не корректное значение!");
         }
     }
+    @interface Test{
+        String value() default "AAAA";
+        String value1();
+        int count() default 1;
+    }
+
+
+
 }
